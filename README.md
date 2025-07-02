@@ -1,6 +1,6 @@
 # React + Vite
  Proyecto donde se utilizó el api de ThemovieDB
- se podrá ver las mejores peliculas
+ Se mostarán cards de las mejores películas
 
 Link local:http://localhost:5173/home
 
