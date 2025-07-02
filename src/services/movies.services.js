@@ -1,14 +1,13 @@
 export const getMovies = async () => {
   try {
-    const response = await fetch('https://api.themoviedb.org/3/movie/popular',
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_API_TOKEN}`
-        }
+
+    const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API_TOKEN}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
       }
-    );
+    });
+    
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
